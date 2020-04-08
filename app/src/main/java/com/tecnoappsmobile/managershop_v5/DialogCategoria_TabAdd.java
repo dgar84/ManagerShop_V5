@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -36,6 +35,11 @@ public class DialogCategoria_TabAdd extends Fragment implements View.OnClickList
 
     Dialog dialogWarning;
 
+    public ArrayList<String> getCategorias(){
+        return categorias;
+    }
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
@@ -57,6 +61,7 @@ public class DialogCategoria_TabAdd extends Fragment implements View.OnClickList
         btnBorrarCategoria.setOnClickListener(this);
 
         editCategoria=(EditText) v.findViewById(R.id.edAddCategoria);
+        editCategoria.setText("");
      /////   Bundle bundle_ft1=getArguments();
        // bundle_ft1.getString("categoria");
      /////   editCategoria.setText(bundle_ft1.getString("categoria"));
@@ -91,11 +96,14 @@ public class DialogCategoria_TabAdd extends Fragment implements View.OnClickList
                 if (editCategoria.getText().toString().equals("")){
                     Toast.makeText(getContext(),R.string.CampoCategoriaVacio,Toast.LENGTH_LONG).show();
                 } else {
-                 /*   Intent i = new Intent(getActivity(), Inventario.class);
+                   Intent i = new Intent(getActivity(), Inventario.class);
                     i.putExtra("categoriaAdd",editCategoria.getText().toString());
                     i.putExtra("Idcategoria",0); // El hecho de que Idcategoria=0 y NomCategoria==" " nos indicará que lo que se quiere es añadir una nueva categoria
                     i.putExtra("NomCategoria","");
-                    getActivity().setResult(Activity.RESULT_OK,i); */
+
+                    categorias.add(editCategoria.getText().toString());
+                    getActivity().setResult(Activity.RESULT_OK,i);
+                    getActivity().finish(); // Al añadir se cierra la actividad
               /*      AddInv.productos.addCategoria(editCategoria.getText().toString());
                     getActivity().finish(); */
                     InitActivity.productos.addCategoria(editCategoria.getText().toString());
@@ -139,6 +147,16 @@ public class DialogCategoria_TabAdd extends Fragment implements View.OnClickList
                 getActivity().setResult(Activity.RESULT_OK,iii); */
                 boolean deleteCat=InitActivity.productos.borrarCategoria(categoriaMod);
                 if (deleteCat){
+                    editCategoria.setText("");
+
+                    for(int i=0;i<categorias.size();i++){
+                        if (categorias.get(i)==categoriaMod){
+                            categorias.remove(i);
+                        }
+                    }
+                 //   DialogCategoria_TabLista.adaptadorCategoria.notifyDataSetChanged();
+                   // layoutAddCat.setVisibility(View.INVISIBLE);
+                   // layoutEditCat.setVisibility(View.VISIBLE);
                     getActivity().finish();
                 } else { // En el caso de que no se pueda borrar salta un mensaje de Warning
 
@@ -158,7 +176,7 @@ public class DialogCategoria_TabAdd extends Fragment implements View.OnClickList
         Bundle extras=getActivity().getIntent().getExtras();
         if(extras != null) {
             Long idCategoria = extras.getLong("id_categoria", -1);
-            if (idCategoria != -1) {
+            if (idCategoria != -1 && editCategoria.getText().toString()!="") {
                 idIntCategoria=idCategoria.intValue();
                 categoriaMod=categorias.get(idIntCategoria);
                 Log.d("Elemento Seleccionado",categorias.get(idIntCategoria));

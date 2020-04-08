@@ -366,9 +366,9 @@ public class AddInventario extends android.support.v4.app.Fragment implements Vi
               //      DialogCategoria overlay = new DialogCategoria();
                     overlay.show(fm, "dialog_fragment_categoria");
                     */
-          /* ===================================          Intent inten=new Intent(getActivity(),DialogCategoriaAc.class);
+                    Intent inten=new Intent(getActivity(),DialogCategoriaAc.class);
                     inten.putStringArrayListExtra("categoria",listaCategoria);
-                    startActivityForResult(inten,1234); ============================= */
+                    startActivityForResult(inten,1234);
                 break;
             case R.id.btnAddNewItem:  // Añadir un nuevo registro a la base de datos
                 // Método de captura de los datos y guadado de los atributos en el objeto Producto.

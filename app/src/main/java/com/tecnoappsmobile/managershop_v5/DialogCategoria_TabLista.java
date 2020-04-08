@@ -35,8 +35,7 @@ public class DialogCategoria_TabLista extends Fragment implements View.OnClickLi
       //  DialogCategoriaAc act=(DialogCategoriaAc) getActivity();
       //  categorias=act.getCategoria();
 
-        categorias=InitActivity.productos.sacarCategorias();
-
+       categorias=InitActivity.productos.sacarCategorias();
         Button btnVolverList=(Button) v.findViewById(R.id.btnVolverDialog);
         btnVolverList.setOnClickListener(this);
         return v;
@@ -71,6 +70,7 @@ public class DialogCategoria_TabLista extends Fragment implements View.OnClickLi
                 DialogCategoria_TabAdd ft1 = new DialogCategoria_TabAdd(); */
             }
         });
+        adaptadorCategoria.notifyDataSetChanged();
         recyclerViewCategoria.setAdapter(adaptadorCategoria);
 
       /*  adaptador.setCursor(MainActivity.fichasBD.extraeCursor());
@@ -86,4 +86,5 @@ public class DialogCategoria_TabLista extends Fragment implements View.OnClickLi
         }
 
     }
+
 }

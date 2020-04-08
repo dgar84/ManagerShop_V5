@@ -32,14 +32,16 @@ public class Fragment_Principal extends Fragment {
             }
         });
 
-     /*   Button btnImport=(Button) v.findViewById(R.id.btn_ImportExport);
+       Button btnImport=(Button) v.findViewById(R.id.btn_ImportExport);
         btnImport.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
                 Intent i=new Intent(getContext(), ImportExport.class);
-                startActivity(i);
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+                    startActivity(i);
+                }
             }
-        }); */
+        });
         return v;
     }
 }

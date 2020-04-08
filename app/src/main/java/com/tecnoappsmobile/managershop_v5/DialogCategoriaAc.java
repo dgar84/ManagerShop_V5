@@ -61,7 +61,8 @@ public class DialogCategoriaAc extends AppCompatActivity {
 
 
     @Override
-    public void onResume() {
+    public void onResume()
+    {
         super.onResume();
         int width=getResources().getDimensionPixelSize(R.dimen.dialog_body_width);
         int height=getResources().getDimensionPixelSize(R.dimen.dialog_body_height);
