@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white">
+
+        <TextView
+            style="@style/negrita_alto"
+            android:id="@+id/filtroCategoria"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/filtroCategoria"
+            android:paddingTop="10dp"
+            android:paddingLeft="5dp"
+            android:layout_weight="1"/>
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/spFiltroCategoria"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <View  android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@android:color/white"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@android:color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#C5CAE9">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#C5CAE9"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        >
+
+            <TextView
+                style="@style/negrita_alto"
+                android:id="@+id/textPercioTotal"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="center" />
+
+            <TextView
+                style="@style/negrita_alto"
+                android:id="@+id/textValorTotal"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="@string/textValorTotal"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/textPercioTotal"
+                android:layout_toStartOf="@+id/textPercioTotal" />
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#C5CAE9"
+        />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:weightSum="9">
+            <TextView
+                style="@style/StyleCabecera"
+                android:id="@+id/textRecNombre"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/textRecNombre"
+                android:layout_weight="3"/>
+            <TextView
+                style="@style/StyleCabecera"
+                android:id="@+id/textRecPrecio"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/textRecPrecio"
+                android:gravity="center"
+                android:layout_weight="2"
+            />
+
+            <TextView
+                style="@style/StyleCabecera"
+                android:id="@+id/textRecExistencias"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/textRecExistencias"
+                android:gravity="center"
+                android:layout_weight="2"
+            />
+
+            <TextView
+                style="@style/StyleCabecera"
+                android:id="@+id/textValor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/textValor"
+                android:gravity="center"
+                android:layout_weight="2"
+            />
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="#1A237E"/>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ECEFF1"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="textVista">
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="textBotones">
+        <item name="android:textColor">#1A237E</item>
+    </style>
+
+
+    <!-- Style ReciclerView Lista inventario -->
+    <style name="negrita_alto">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="StyleCabecera">
+        <item name="android:textColor">#D50000</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+    <style name="StyleTextRecycler">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+
+    <!-- Style Dialog -->
+    <style name="styleDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:textColorPrimary">#2962ff</item>
+        <item name="android:windowTitleStyle">@style/styleTitulo</item>
+    </style>
+    <style name="styleTitulo">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+    <style name="textSize">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+
+    <!-- Style Dailog Warning-->
+    <style name="Theme_Dialog_Translucent" parent="android:Theme.Dialog">
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+    </style>
+
+    <style name="AppOverlayTheme" parent="@style/Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--   theme UI controls like checkboxes and text fields e.g. FloatActionButton -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Title Text Color -->
+        <item name="android:textColorPrimary">@color/primary_text</item>
+        <!-- color of the menu overflow icon (three vertical dots) -->
+        <item name="android:textColorSecondary">@color/secondary_text</item>
+    </style>
+
+</resources>

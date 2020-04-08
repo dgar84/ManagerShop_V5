@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">Administración de tienda</string>
+
+    <string name="btninventario">Inventario</string>
+    <string name="btnCompra">Compra</string>
+    <string name="btnContabilizar">Contabilidad</string>
+
+    <string name="action_settings">Ajustes</string>
+
+
+    <!-- =================================== INVENTARIO ==================================== -->
+    <!-- Layout Add/Edit inventario -->
+    <string name="app_Inventario">Inventario</string>
+    <string name="txtCodigoBaras">Código de barras</string>
+    <string name="txtCodigoInterno">Código interno</string>
+    <string name="txtCategoria">Categoría</string>
+    <string name="txtDescripcion">Descripción</string>
+    <string name="txtUnidades">Existencias</string>
+    <string name="txtPrecioVenta">Precio de Venta</string>
+    <string name="txtPrecioMayorista">Precio Mayorista</string>
+    <string name="txtTipoDescuento">Tipo de descuento</string>
+    <string name="txtDescuento">Descuento</string>
+    <string name="txtLocalizacion">Localización</string>
+    <string name="txtFoto">Foto:</string>
+    <string name="btnSelecImagen">Selección</string>
+    <string name="btnCamara">Cámara</string>
+    <string name="btnBorrar">Borrar</string>
+    <string name="txtNombreProducto">Nombre del producto</string>
+    <string name="btnAnadir">Añadir</string>
+    <string name="btnAddEdit">Añadir/Editar</string>
+    <string name="btnGuardar">Guardar</string>
+    <string name="btnBuscar">Buscar</string>
+    <string name="btnVolver">Volver</string>
+    <string name="titBorrado">Borrado de foto</string>
+    <string name="mesBorrado">¿Estás seguro que quieres eliminar la foto?</string>
+    <string name="btnConfirmar">Confirmar</string>
+
+    <string name="titAddEdit">Añadir/Editar Categoría</string>
+
+
+    <string name="titSelecionarFoto">Seleccionar foto</string>
+
+    <!-- pestaña Añadir -->
+    <string name="tab_edicion">Edición</string>
+
+    <!-- pestaña Editar -->
+    <string name="tab_editar">Editar</string>
+
+
+    <!-- pestaña Lista -->
+    <string name="tab_lista">Lista</string>
+    <string name="precio">Precio</string>
+
+
+    <!-- RecyclerView para listar el inventario -->
+    <string name="textRecNombre">Nombre</string>
+    <string name="textRecPrecio">Precio</string>
+    <string name="textRecExistencias">Existencias</string>
+    <string name="textValor">Valor</string>
+    <string name="textValorTotal">Valor Total</string>
+    <string name="filtroCategoria">Filtrar por categoría</string>
+    <string name="selecAllCategorias">Todas las categorías</string>
+
+    <!-- Diálogo Categoría -->
+    <string name="AddEdittxtCategoria">Categoría de productos</string>
+    <string name="app_categoria">Categoría de productos</string>
+    <string name="CampoCategoriaVacio">Has dejado el campo categría vacio.</string>
+
+    <!-- Dialog de warning -->
+    <string name="btnAceptar">Aceptar</string>
+    <string name="dialog_tit">Error</string>
+    <string name="dialog_cont_1">Existen productos que tienen la categoría:"</string>
+    <string name="dialog_cont_2">". Es preciso hacer los cambios pertienetes para poder realizarlo.</string>
+
+    <!-- Dialog de warning al añadir un nuevo producto -->
+    <!-- se aprovecha dialog_tit-->
+    <string name="dialog_cont_add">Para añadir un nuevo registro por lo menos
+        hay que ingresar los campos: Nombre del producto, Precio de venta y Unidades.</string>
+    <!-- CASOS posibles: -->
+    <string name="warningNom">No se ha introducido el nombre del producto.</string>
+    <string name="warningPrecio">No se puede dejar a cero el precio de venta al público.</string>
+    <string name="warningUnidades">No se puede dejar a cero el número de unidades del nuevo producto.</string>
+
+    <!-- Dialog de aviso de borrado de producto -->
+    <string name="dialog_tit_aviso">Aviso de borrar producto</string>
+    <string name="dialog_aviso_borrado">¿Estás seguro que quieres eliminar el producto?</string>
+
+
+    <!-- texto de Warning de permisos -->
+    <string name="permiso_camara">Sin el permiso de la camara no se pueden hacer fotos.</string>
+    <string name="permiso_fichero_lectura">Sin el permiso de lectura no se pueden acceder a las fotos.</string>
+    <string name="permiso_fichero_escritura">Sin el permiso de escritura no se pueden guardar las fotos.</string>
+
+    <!-- ============================== Actividad para búsqueda de productos =========================================== -->
+    <string name="titulo_buscar">Buscar producto</string>
+    <string name="text_bucar">Nombre o código de barras</string>
+    <string name="columnCodigo">Código de barras</string>
+    <string name="columnNombre">Nombre de producto</string>
+
+    <string name="titl_dialogBuscar_error">Error</string>
+    <string name="content_dialogBuscar_error">No se puede dejar el campo de búsqueda vacío.</string>
+
+    <!-- Activity IMPORT EXPORT -->
+    <string name="tit_import_export">Exportar/Importar datos</string>
+    <string name="import_pro">Importar productos</string>
+    <string name="import_info">Cargar datos en la base de datos desde un fichero .csv</string>
+
+
+</resources>

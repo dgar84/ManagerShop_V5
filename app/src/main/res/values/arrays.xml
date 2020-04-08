@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="TipoDescuento">
+        <item>Otro</item>
+        <item>3x2</item>
+        <item>2x1</item>
+        <item>Segunda unidad con descuento</item>
+    </string-array>
+
+    <string-array name="Descuento">
+        <item>%</item>
+        <item>Precio</item>
+    </string-array>
+
+    <string-array name="spCategoria">
+        <item>Sin Clasificar</item>
+        <item>Libro</item>
+    </string-array>
+
+
+
+    <!-- Array para importación -->
+    <string-array name="titulo_import">
+        <item>Importar productos</item>
+        <item>Exportar inventario</item>
+        <item>Poner a cero el inventario</item>
+        <item>Borrar inventario</item>
+    </string-array>
+
+    <string-array name="info_import">
+        <item>Cargar datos en la base de datos desde un fichero .csv</item>
+        <item>Exporta los datos del inventariado a un fichero .csv</item>
+        <item>Pone a cero todas las unidades de producto.</item>
+        <item>Borra toda la base de datos del inventario.</item>
+    </string-array>
+
+</resources>

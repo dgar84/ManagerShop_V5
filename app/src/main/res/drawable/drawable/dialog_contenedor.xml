@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- fondo de color blanco -->
+    <solid android:color="@android:color/white"/>
+
+    <padding android:bottom="10dp" android:left="8dp" android:right="8dp" android:top="10dp" />
+
+    <!-- ponemos borde -->
+    <stroke android:color="@android:color/darker_gray"
+        android:width="4dp" />
+
+</shape>

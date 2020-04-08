@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tecnoappsmobile.managershop_v5">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <protected-broadcast android:name="android.intent.action.MEDIA_MOUNTED"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.tecnoappsmobile.managershop_v5.InitActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.tecnoappsmobile.managershop_v5.Inventario"
+            android:label="@string/app_Inventario"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme">
+        </activity>
+
+        <activity android:name="com.tecnoappsmobile.managershop_v5.DialogCategoriaAc"
+            android:label="@string/app_categoria"
+            android:screenOrientation="portrait"
+            android:theme="@style/styleDialog"> <!--@style/Theme.AppCompat.Light.Dialog.Alert-->
+
+        </activity>
+        <activity android:name="com.tecnoappsmobile.managershop_v5.ActivityInventario.BuscarProducto"
+            android:label="@string/titulo_buscar"
+            android:screenOrientation="portrait"
+            android:theme="@style/styleDialog">
+
+        </activity>
+
+        <!-- Activity ImportExport -->
+        <activity android:name="com.tecnoappsmobile.managershop_v5.ImportExport.ImportExport"
+            android:label="@string/tit_import_export"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.tecnoappsmobile.managershop_v5.AdministracionArchivo.ExploradorRoot"
+            android:label="Explorar Root"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.tecnoappsmobile.managershop_v5.AdministracionArchivo.ExplorerArchivos"
+            android:label="Explorer Archivos"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.tecnoappsmobile.managershop_v5.CodeScanner"
+            android:label="CodeScanner"
+            android:theme="@style/AppOverlayTheme"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    >
+
+    <TextView
+        android:id="@+id/text_buscar_producto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_bucar"
+        android:textSize="16sp"
+        android:background="@color/fondo_top"
+        android:padding="@dimen/padd_text"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/fondo_top">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="4dp"
+                android:layout_weight="1"
+                android:background="@color/fondo_top"/>
+
+            <EditText
+                android:id="@+id/buscar_edit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="16"
+                android:textSize="16sp"
+                android:background="@drawable/buscar_edit"
+                android:singleLine="true" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="4dp"
+                android:layout_weight="1"
+                android:background="@color/fondo_top"/>
+
+            <ImageButton
+                android:id="@+id/btn_buscar_cod"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_codigo_barras"
+                android:layout_weight="4"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="4dp"
+                android:layout_weight="1"
+                android:background="@color/fondo_top"/>
+            <ImageButton
+                android:id="@+id/btn_buscar_producto"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/fondo_top"
+                android:src="@android:drawable/ic_search_category_default"
+                android:layout_weight="4"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="4dp"
+                android:layout_weight="1"
+                android:background="@color/fondo_top"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/fondo_top"/>
+    </LinearLayout>
+    <!-- AÑADIR LAS COLUMNAS -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="25"
+        >
+
+        <View android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/fondo_top"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/columnCodigo"
+            android:text="@string/columnCodigo"
+            android:textColor="#000000"
+            android:typeface="serif"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="11"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/columnNombre"
+            android:text="@string/columnNombre"
+            android:textColor="#000000"
+            android:typeface="serif"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="12"
+            android:textSize="15sp"/>
+        <View android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/fondo_top"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <!-- añadimos las lineas -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="25"
+        >
+        <View android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/fondo_top"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="#000000"
+            android:layout_weight="23"/>
+        <View android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/fondo_top"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="25"
+        >
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/fondo_top"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="23"
+            android:background="#FFFFFF"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/fondo_top"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="25">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/fondo_top"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="23"
+            android:background="#000000"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/fondo_top"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="20">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="17"
+            android:orientation="horizontal"
+            android:weightSum="25">
+            <View android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/fondo_top"
+                android:layout_weight="1"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyBuscar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="23"
+                ></android.support.v7.widget.RecyclerView>
+
+            <View android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/fondo_top"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linealbotonBuscar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:background="@color/fondo_top"
+            >
+
+            <Button
+                android:id="@+id/btnBuscarCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@android:string/cancel"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                tools:ignore="InefficientWeight" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+

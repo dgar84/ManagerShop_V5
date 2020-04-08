@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dp"
+    android:weightSum="9">
+    <TextView
+        android:id="@+id/textCodigoBuscar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="3dp"
+        android:textSize="15sp"
+        android:typeface="serif"
+        android:layout_weight="4"/>
+    <View android:layout_width="0dp"
+        android:layout_height="4dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:id="@+id/textNombreBuscar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingRight="3dp"
+        android:textSize="15sp"
+        android:typeface="serif"
+        android:layout_weight="4"/>
+
+</LinearLayout>

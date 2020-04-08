@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            style="@style/textBotones"
+            android:text="@string/btnCompra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_compra"
+            android:background="@drawable/caja_registradora_trasparente"
+            android:gravity="bottom|center"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            style="@style/textBotones"
+            android:text="@string/btninventario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_inventario"
+            android:background="@drawable/inventario_transparencia"
+            android:gravity="bottom|center"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            style="@style/textBotones"
+            android:text="@string/btnContabilizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ico_importacin_base_de_datos_peq"
+            android:id="@+id/btn_ImportExport"
+            android:textStyle="bold"
+            android:gravity="bottom|center"
+             />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            style="@style/textBotones"
+            android:text="@string/btnContabilizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icono_contabilidad_real"
+            android:id="@+id/button10"
+            android:textStyle="bold"
+            android:gravity="bottom|center"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>
